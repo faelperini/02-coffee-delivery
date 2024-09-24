@@ -17,7 +17,7 @@ O Coffee Delivery é uma aplicação web desenvolvida em React que simula o carr
 * **Styled Components:** Biblioteca CSS-in-JS para estilização dos componentes.
 * **Zod:** Biblioteca de validação de dados.
 * **React Hook Form:** Biblioteca para criação de formulários.
-Immer: Biblioteca para imutabilidade de dados.
+* **Immer:** Biblioteca para imutabilidade de dados.
 * **@hookform/resolvers:** Resolvers para o React Hook Form.
 * **Inner:** Biblioteca para manipulação de objetos.
 * **Polished:** Biblioteca de utilitários CSS.
