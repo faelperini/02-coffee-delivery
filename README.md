@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# Coffee Delivery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O Coffee Delivery é uma aplicação web desenvolvida em React que simula o carrinho de compras de uma cafeteria, permitindo aos usuários escolherem e adicionarem diferentes tipos de cafés ao carrinho. A aplicação oferece uma interface intuitiva para o usuário gerenciar seus pedidos e finalizar a compra.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Tela inicial do aplicativo](public/coffee-delivery-1.png)
 
-## Expanding the ESLint configuration
+![Tela inicial do aplicativo](public/coffee-delivery-2.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Tela inicial do aplicativo](public/coffee-delivery-3.png)
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+* **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+* **React Router Dom:** Biblioteca para gerenciamento de rotas e navegação entre páginas.   
+* **Styled Components:** Biblioteca CSS-in-JS para estilização dos componentes.
+* **Zod:** Biblioteca de validação de dados.
+* **React Hook Form:** Biblioteca para criação de formulários.
+Immer: Biblioteca para imutabilidade de dados.
+* **@hookform/resolvers:** Resolvers para o React Hook Form.
+* **Inner:** Biblioteca para manipulação de objetos.
+* **Polished:** Biblioteca de utilitários CSS.
+* **LocalStorage:** Armazenamento de dados localmente no navegador.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Como executar o projeto
+
+1. **Clone o repositório:**
+  ```bash
+  git clone https://github.com/faelperini/02-coffee-delivery
+  ```
+
+2. **Instale as dependências:**
+  ```bash
+  cd 02-coffee-delivery
+  npm install
+  ```
+
+3. **Inicie o desenvolvimento:**
+  ```Bash
+  npm run dev
+  ```
+
+O aplicativo será iniciado em http://localhost:5173/
+
+## Funcionalidades
+
+**Catálogo de Produtos:** Apresenta uma lista completa dos cafés disponíveis, com seus respectivos preços.
+
+**Carrinho de Compras:** Permite aos usuários adicionarem, removerem e ajustarem a quantidade de itens no carrinho.
+
+**Formulário de Endereço:** Coleta as informações de endereço do usuário para a finalização da compra (implementação simulada neste projeto).
+
+**Resumo do Pedido:** Exibe o total de itens e o valor total da compra.
+
+## Conceitos Abordados
+
+* **Estados:** Gerenciamento do estado da aplicação utilizando o React Context API.
+* **Context API:** Compartilhamento de dados entre componentes.
+* **LocalStorage:** Persistência de dados localmente para manter o estado do carrinho mesmo após atualizações de página.
+* **Imutabilidade:** Garantia da integridade dos dados através da utilização da biblioteca Immer.
+* **Listas e Chaves:** Renderização de listas de itens utilizando chaves únicas para otimização.
+* **Propriedades:** Passagem de dados entre componentes através de propriedades.
+* **Componentização:** Divisão da interface em componentes reutilizáveis para melhor organização e manutenção.
